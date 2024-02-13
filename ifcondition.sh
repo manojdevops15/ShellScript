@@ -1,6 +1,6 @@
 #!/bin/bash
 
-NNUMBER=56
+NNUMBER=$1
 
 if [ $NUMBER -gt 100 ]
 
