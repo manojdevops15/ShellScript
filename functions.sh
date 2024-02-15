@@ -24,7 +24,7 @@ do
 
     yum list installed $package
 
-    if [ $? -ne o ]
+    if [ $? -ne 0 ]
     then
         yum install $package
         VALIDATE $? "installing $package"
