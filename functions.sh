@@ -6,9 +6,9 @@ VALIDATE() {
 
 if [ $1 -ne 0 ]
 then 
-    echo "$2 ..... SUCCESS"
+    echo "$2 ..... FAILED"
 else
-    echo "$2 ....... FAILED"
+    echo "$2 ....... SUCCESS"
 fi
 }
 
@@ -26,7 +26,7 @@ do
 
     if [ $? -ne 0 ]
     then
-        yum install $package
+        yum install $package -y
         VALIDATE $? "installing $package"
     else
         echo "$package already installed"
