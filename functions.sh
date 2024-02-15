@@ -9,6 +9,7 @@ then
     echo "$2 ..... SUCCESS"
 else
     echo "$2 ....... FAILED"
+fi
 }
 
 if [ $ID -ne 0 ]
