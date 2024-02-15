@@ -22,12 +22,13 @@ fi
 for package in $@
 do
 
-yum list installed $package
+    yum list installed $package
 
-if [ $? -ne o ]
-then
-    yum install $package
-    VALIDATE $? "installing $package"
-else
-    echo "$package already installed"
-fi
+    if [ $? -ne o ]
+    then
+        yum install $package
+        VALIDATE $? "installing $package"
+    else
+        echo "$package already installed"
+    fi
+done
