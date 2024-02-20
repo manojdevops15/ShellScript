@@ -65,7 +65,7 @@ cd /app
 
 VALIDATE $? "go to the app directory"
 
-unzip /tmp/catalogue.zip
+unzip -o /tmp/catalogue.zip
 
 VALIDATE $? "unzip the roboshop application"
 
@@ -75,7 +75,7 @@ npm install
 
 VALIDATE $? "npm installed succesfully"
 
-cp C:\Devops\daws-76\repos\ShellScript\catalogue.service /etc/systemd/system/catalogue.service
+cp /home/Devops/daws-76/repos/ShellScript/catalogue.service /etc/systemd/system/catalogue.service
 
 VALIDATE $? "coping catalogue file"
 
@@ -91,7 +91,7 @@ systemctl start catalogue
 
 VALIDATE $? "started catalogue"
 
-cp C:\Devops\daws-76\repos\ShellScript\catalogue.service /etc/yum.repos.d/mongo.repo
+cp /home/Devops/daws-76/repos/ShellScript/catalogue.service /etc/yum.repos.d/mongo.repo
 
 VALIDATE $? "Copied mongodb repo"
 
@@ -103,4 +103,4 @@ mongo --host $MONGODB </app/schema/catalogue.js
 
 VALIDATE $? "change ip address"
 
-C:\Devops\daws-76\repos\ShellScript\catalogue.service
+
