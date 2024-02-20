@@ -53,7 +53,7 @@ else
     echo "roboshop user already created so creation was skipping"
 fi
 
-mkdir /app
+mkdir -p /app
 
 VALIDATE $? "created the app directory"
 
