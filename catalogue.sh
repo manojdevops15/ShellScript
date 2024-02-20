@@ -75,7 +75,7 @@ npm install
 
 VALIDATE $? "npm installed succesfully"
 
-cp /c/Devops/daws-76/repos/ShellScript//catalogue.service /etc/systemd/system/catalogue.service
+cp /c/Devops/daws-76/repos/ShellScript/catalogue.service /etc/systemd/system/catalogue.service
 
 VALIDATE $? "coping catalogue file"
 
