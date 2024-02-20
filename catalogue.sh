@@ -75,7 +75,7 @@ npm install
 
 VALIDATE $? "npm installed succesfully"
 
-cp /home/Devops/daws-76/repos/ShellScript/catalogue.service /etc/systemd/system/catalogue.service
+cp /c/Devops/daws-76/repos/ShellScript//catalogue.service /etc/systemd/system/catalogue.service
 
 VALIDATE $? "coping catalogue file"
 
@@ -91,7 +91,7 @@ systemctl start catalogue
 
 VALIDATE $? "started catalogue"
 
-cp /home/Devops/daws-76/repos/ShellScript/catalogue.service /etc/yum.repos.d/mongo.repo
+cp /c/Devops/daws-76/repos/ShellScript/mongo.repo /etc/yum.repos.d/mongo.repo
 
 VALIDATE $? "Copied mongodb repo"
 
